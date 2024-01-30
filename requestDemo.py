@@ -16,7 +16,7 @@ source = 'http://www.rfc-editor.org/rfc/rfc{}.txt'
     #creating the url using format and supplying the user input argument
 url = source.format(rfc_num) 
 
-    #requesting the url and reading it into rfc_raw
+    #requesting the url and reading it into rfc_response
 rfc_response = requests.get(url) 
 
     #display the data into the console
