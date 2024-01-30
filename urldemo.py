@@ -17,7 +17,7 @@ source = 'http://www.rfc-editor.org/rfc/rfc{}.txt'
     #creating the url using format and supplying the user input argument
 url = source.format(rfc_num) 
 
-    #requesting the url and reafing it into rfc_raw
+    #requesting the url and readSing it into rfc_raw
 rfc_raw = urllib.request.urlopen(Request(url,headers={'User-Agent': 'Mozilla/5.0'})).read()
     #format the data into utf-8
 rfc = rfc_raw.decode('utf-8') 
